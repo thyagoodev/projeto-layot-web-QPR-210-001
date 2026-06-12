@@ -1,3 +1,4 @@
+/*
 console.log('SOMA DAS VARIÁVEIS ', num + num2)
 console.log('SUBTRAÇÃO DAS VARIÁVEL ', num3 - num)
 console.log('MULTIPLICAÇÃO ', num5 * 2)
