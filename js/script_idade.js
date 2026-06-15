@@ -10,6 +10,7 @@ formDADOS.addEventListener('submit', (evt) =>{
 
     let nome = objFormDados.get('nome')
     let idade = objFormDados.get('idade')
+    
 
     let situacaoidade = ''
 
