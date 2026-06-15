@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 4 - Boletim Escolar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="descricao-questao">
+        <p><span class="numero">4.</span> Entrar com Nome, 3 notas de um aluno. Ache a média. Caso a média seja maior ou igual a 6, apresentar o texto Aprovado, caso contrário apresentar o texto Reprovado</p>
+    </div>
+
+    <div class="conteudo">
+        <div class="titulo-conteudo">B O L E T I M E S C O L A R</div>
+        
+        <div class="form-group">
+            <label class="label">Nome do Aluno</label>
+            <input type="text" id="nomeAluno" placeholder="Ex: João Silva">
+        </div>
+        
+        <div class="form-group">
+            <label class="label">Nota 1</label>
+            <input type="number" step="0.1" id="nota1" placeholder="Ex: 7.5">
+        </div>
+        
+        <div class="form-group">
+            <label class="label">Nota 2</label>
+            <input type="number" step="0.1" id="nota2" placeholder="Ex: 8.0">
+        </div>
+        
+        <div class="form-group">
+            <label class="label">Nota 3</label>
+            <input type="number" step="0.1" id="nota3" placeholder="Ex: 6.2">
+        </div>
+
+        <div class="botoes">
+            <button class="botao" onclick="calcularBoletim()">Calcular</button>
+            <button class="botao" onclick="limparCampos()">Limpar</button>
+        </div>
+
+        <div class="resultado" id="resultadoBoletim"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
