@@ -1,29 +1,22 @@
-//PEGANDO ELEMENTOS DO DOM
-const formDADOS = document.querySelector('#formulario')
+const formDADOS = document.querySelector('#formDADOS')
 const divResultado = document.querySelector('#div-dados')
 
-//CAPTURANDO O EVENTO SUBMIT DO FORMULÁRIO
 formDADOS.addEventListener('submit', (evt) => {
     evt.preventDefault()
 
     const objFormDados = new FormData(formDADOS)
 
-    let largura = parseFloat(objFormDados.get('largura'))
-    let altura = parseFloat(objFormDados.get('altura'))
+    let distancia = parseFloat(objFormDados.get('distancia'))
+    let consumo = parseFloat(objFormDados.get('consumo'))
+    let preco = parseFloat(objFormDados.get('preco'))
 
-    let area = largura * altura
+    let combustivel = distancia / consumo
+    let valorTotal = combustivel * preco
 
-
-    divResultado.innerHTML = ` A área a ser pintada é de $ (area.
-    toFixed(2).replace('.',',') } m , total de litros para pintar 
-    essa área é de ${parseFloat(área / 2).toFixed(2).replace('.', '.')}`
-
+    divResultado.innerHTML = `
+        <p>Quantidade de combustível necessária: ${combustivel.toFixed(2)} litros</p>
+        <p>Valor total a pagar: R$ ${valorTotal.toFixed(2)}</p>
+    `
 
     formDADOS.reset()
-
-
 })
-
-
-
-
