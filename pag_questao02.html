@@ -1,47 +1,53 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Desafio WEB</title>
-
-    <link rel="stylesheet" href="css/style.css">
-
-    <script src="js/script_questao02.js" defer></script>
-
+    <title>Questão 3 - Consumo de Combustível</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <h1><h1>Informe a distância, o consumo médio do veículo e o preço do combustível para calcular o gasto da viagem.</h1></h1>
-    
-    <div id="div-form">
-
-        <h3> <h3>Cálculo de Combustível</h3></h3>
-
-        <form id="form id="formDADOS></form>">
-
-        <label>Distância (km)</label>
-        <input type="text" name="distancia" id="distancia">
-
-        <label>Consumo médio (km/l)</label>
-        <input type="text" name="consumo" id="consumo">
-
-        <label>Preço do litro (R$)</label>
-        <input type="text" name="preco" id="preco">
-    
-    
-            <button type="submit">Enviar</button>
-            <button type="reset">Limpar</button>
-
-        </form>
-
-        <div id="div-dados">
-
-        </div>
-
+    <div class="descricao-questao">
+        <p><span class="numero">3.</span> O usuário deverá informar:</p>
+        <ul>
+            <li>A distância a ser percorrida (em quilômetros);</li>
+            <li>O consumo médio do veículo (em km/l);</li>
+            <li>O preço do litro do combustível.</li>
+        </ul>
+        <p>Com base nessas informações, o algoritmo deve calcular e exibir:</p>
+        <ul>
+            <li>A quantidade de combustível necessário para percorrer o trajeto;</li>
+            <li>O valor total a pagar com combustível para esse deslocamento.</li>
+        </ul>
     </div>
 
+    <div class="conteudo">
+        <div class="titulo-conteudo">C Á L C U L O D E C O M B U S T Í V E L</div>
+        
+        <div class="form-group">
+            <label class="label">Distância (km)</label>
+            <input type="number" id="distancia" placeholder="Ex: 350">
+        </div>
+        
+        <div class="form-group">
+            <label class="label">Consumo (km/l)</label>
+            <input type="number" id="consumo" placeholder="Ex: 12.5">
+        </div>
+        
+        <div class="form-group">
+            <label class="label">Preço do Litro (R$)</label>
+            <input type="number" step="0.01" id="preco" placeholder="Ex: 5.89">
+        </div>
+
+        <div class="botoes">
+            <button class="botao" onclick="calcularCombustivel()">Calcular</button>
+            <button class="botao" onclick="limparCampos()">Limpar</button>
+        </div>
+
+        <div class="resultado" id="resultadoCombustivel"></div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

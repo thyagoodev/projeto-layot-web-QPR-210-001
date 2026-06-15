@@ -1,22 +1,27 @@
-const formDADOS = document.querySelector('#formDADOS')
+//PEGANDO ELEMENTOS DO DOM
+const formDADOS = document.querySelector('#formulario-pessoa')
 const divResultado = document.querySelector('#div-dados')
 
-formDADOS.addEventListener('submit', (evt) => {
+//CAPTURANDO O EVENTO SUBMIT DO FORMULÁRIO
+formDADOS.addEventListener('submit', (evt) =>{
     evt.preventDefault()
 
-    const objFormDados = new FormData(formDADOS)
+    const objFormDados = new FormData(formDadoS)
 
-    let distancia = parseFloat(objFormDados.get('distancia'))
-    let consumo = parseFloat(objFormDados.get('consumo'))
-    let preco = parseFloat(objFormDados.get('preco'))
+    let n1 = objFormDados.get('num1')
+    let n2 = objFormDados.get('num2')
+    let n3 = objFormDados.get('num3')
 
-    let combustivel = distancia / consumo
-    let valorTotal = combustivel * preco
+    let media = parseFloat((n1 + n2 + n3)) /  3
 
-    divResultado.innerHTML = `
-        <p>Quantidade de combustível necessária: ${combustivel.toFixed(2)} litros</p>
-        <p>Valor total a pagar: R$ ${valorTotal.toFixed(2)}</p>
-    `
+    divResultado.innerHTML = 'A MÉDIA DOS NÚMEROS DIGITADOS É: $ 
+       { media.toFixed (2).replace('.',',') }''
 
-    formDADOS.reset()
-})
+       formDados.reset()
+       
+
+ })
+
+
+
+

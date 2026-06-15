@@ -1,15 +1,97 @@
 body {
-    font-family: Arial, Helvetica, sans-serif
-    text-aligh center;
-    background-color: aliceblue;
-    margin-top:  100px;
-
+    background-color: #1a432b;
+    color: #f4f4f9;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
 }
-h1 {
-    color: rgb (128, 0, 111);
 
-}
-p {
-    color: azure;
+.descricao-questao {
+    color: white;
+    width: 80%;
+    max-width: 600px;
+    text-align: left;
+    margin: 0 auto 30px;
+    font-size: 1.0em;
+    line-height: 1.4;
 }
 
+.descricao-questao span.numero {
+    color: #ffe89e;
+    font-weight: bold;
+}
+
+.descricao-questao ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.conteudo {
+    background-color: #6b8a71;
+    padding: 30px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    box-sizing: border-box;
+}
+
+.titulo-conteudo {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.label {
+    color: #f4f4f9;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.9em;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.botoes {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.botao {
+    background-color: white;
+    color: #333;
+    border: 1px solid #aaa;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.resultado {
+    background-color: white;
+    color: #333;
+    padding: 15px;
+    margin-top: 30px;
+    border-radius: 5px;
+    min-height: 50px;
+    font-size: 0.9em;
+    box-sizing: border-box;
+}
