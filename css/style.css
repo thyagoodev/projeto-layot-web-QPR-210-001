@@ -614,3 +614,34 @@ input[type="text"], input[type="number"] {
     font-size: 0.9em;
     box-sizing: border-box;
 }
+
+body{
+    
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+input, button{
+    padding: 10px;
+    margin: 5px;
+}
+body{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+input, button{
+    padding: 10px;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+input, button{
+    padding: 10px;
+}
